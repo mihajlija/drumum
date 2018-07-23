@@ -1,8 +1,9 @@
 body {
   background: #3B3348;
   font-family: "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
+  user-select: none;
 }
 
 #drum-machine {
@@ -20,16 +21,17 @@ body {
   background: #615786;
   border: 5px solid #9777B1;
   border-radius: 5px;
-  width: 200px;
-  height: 300px;
+  
 }
 
 #keypad {
   display: grid;
-  grid-template-columns: 40px 40px 40px;
-  grid-template-rows: 30px 30px 30px;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0.3em 0.3em;
-  margin: 1em;
+  margin: 0.8em;
 }
 
 .drum-pad {
@@ -44,15 +46,19 @@ body {
 
 .playing {
   transform: scale(0.8);
+  text-shadow: 0 0 5px #fff;
+  color:#F59BB0;
 }
 
 #display {
   background: #3B3348;
-  width: calc(120px + 0.6em);
-  line-height: 1.5em;
+  width: calc(400px);
+  line-height: 2em;
+  margin-top: 0.8em;
   text-align: center;
   border: 1px solid #9777B1;
   color: #F59BB0;
-  
 }
+
+
 
